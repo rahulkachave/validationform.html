@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script>
+        function validateForm(){
+            //  const email =document.getElementById(email).value;
+            // const password=document.getElementById(password).value;
+            const emailInput = document.getElementById("email");
+        const passwordInput = document.getElementById("password");
+    const emailValue = emailInput.value;
+    const passwordValue = passwordInput.value
+    const emailRegex = /^rahul@123gmail\.com$/;
+    // const passwordRegex = /^\d{6}$/;     
+    const passwordRegex = /^[123456]{6}$/;
+
+            if (email ==null || password==null){
+                alert("please fill the all fields");
+                return false;
+            }else if(!emailRegex.test(emailValue)){
+                alert("please enter valid email id");
+                return false;
+            }else if(!passwordRegex.test(passwordValue)){
+                alert("please enter valid passsword ");
+                return false;
+                        }else if (password.length<6){
+                alert("password must be at least 6 character long");
+                return false;
+
+            }else{
+                document.write("<h2 style=background-color: antiquewhite; >login succusessfully</h2>");
+                 window.location.href = "index.html";
+                // window.location.href ="about.html";
+                return true;
+            }
+        }
+        
+    </script>
+   
+</head>
+<body>
+  
+    <div Class ="wrapper">
+        <div>
+    <h2>Login page</h2><br> </div>
+    <div>
+    
+    <input type ="email" id ="email" >
+    <label>Email</label>
+    </div>
+    <div>
+    <input type ="password" id = "password" >
+    <label >password</label>
+    
+    </div>
+    <br>
+    <div>
+        <label><input type="checkbox"> remember me</label>
+        <a href="forgotpassword.html">Forgot password?</a>
+       
+    </div> <br>
+        <button class="btn" type ="submit" onclick="return validateForm()">LogIn</button>
+        <input type="submit"value =register>
+        <div>
+            <p> Don't have an account ?
+                <a href="register.html">Register</a>
+            </p>
+        </div>
+    
+    
+    
+
+    </div>
+  
+</body>
+</html>

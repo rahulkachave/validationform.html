@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"/> -->
+    <style>
+.h3s{
+    color: red;
+}
+.header{
+     
+   padding: 30px; 
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 10px;
+  width:1000;
+    padding: 10px 400px;
+    justify-content: space-between;
+    z-index: 99; 
+
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+    <h1 style="color: brown;"> Notes for inteview prepatarion</h1>
+   <!-- <div></div> <input type ="name"></div>
+    <div><input type ="last name"></div> -->
+    <button type="button"> <a href ="java.html" >Java</a></button>
+  
+    <button =type "button"   class="h3s" onclick="junit()">junit  </button>  
+<button =type "button" class="h3s" onclick="java()">java</button>
+<button =type "button" class="h3s" onclick="mongoDB()">mongo</button>
+<button =type "button" class="h3s" onclick="keywords()">keywords</button>
+
+    </header>
+    <p> ##                                                                   Spring                                                                               ## 
+
+        <h1 class="h3s">What is spring ?</h1><br>
+        Spring is an open-source framework for building Java-based enterprise applications. It provides a comprehensive programming and configuration model for building modern, scalable, and high-performance applications. Spring offers a wide range of features, including dependency injection, aspect-oriented programming, data access, and more, which can help developers build applications more quickly and easily.
+        
+       <h3 class="h3s"> What is IOC ?</h3>
+        Spring IoC Container is the core of Spring Framework. It creates the objects, configures and assembles their dependencies, manages their entire life cycle. The Container uses Dependency Injection(DI) to manage the components that make up the application.
+        <h3 class="h3s">Dependancy Injection ?</h3>
+        Dependency Injection (DI) is a design pattern that removes the dependency from the programming code so that it can be easy to manage and test the application. Dependency Injection makes our programming code loosely coupled.
+        or
+        Dependency Injection is a fundamental aspect of the Spring framework, through which the Spring container “injects” objects into other objects or “dependencies”.
+        Two ways Depende ncy injection in spring framework
+        1.	By construction 
+        < constructor-arg > tag is used to inject the values through constructor
+        2.	Setter method
+        < property > tag is used to inject the values through setter
+        
+        <h3 class="h3s">Autowiring in Spring</h3>
+        Autowiring feature of spring framework enables you to inject the object dependency implicitly. It internally uses setter or constructor injection.
+        Autowiring can't be used to inject primitive and string values. It works with reference only.
+        
+       <h3 class="h3s"> Spring Bean</h3>
+        In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container. Otherwise, a bean is simply one of many objects in your application
+        What are spring beans?
+        Spring beans are the objects which are created and managed completely by spring container.
+        These beans are the heart of the application.
+        Beans can be defined in spring either by using XML configuration or by using Annotation.
+        In XML configuration, bean can be defined using < bean > tag inside < beans > tag.
+        In Annotation configuration , bean can be defined using the annotations like @Component,@Service,@Controller,@Repository on top of the class definition.
+        We can also achieve beans definition completely in java class by using java configuration.
+        <h3 class="h3s">Example</h3>
+        	
+        </p>
+    <script>
+        
+function junit(){
+   
+    document.write("        <h1>                                          Junit InterviewQuetionIntroduction</h1><br>"+
+"Testing is an important part of the software development process as it helps in resolving bugs before the software goes to production. Unit testing is a type of testing that tests individual entities at a time. JUnit is an open-source, Java-based and one of the most popular unit testing frameworks and is supported by most popular IDEs like Eclipse, IntelliJ etc. It is used to write and run unit tests by providing annotations for identifying the test methods and expected results. This framework allows writing codes faster, increases the quality of the source code and helps in identifying bugs in the source code at a very early stage."+
+"<h1>4. What are the features of JUnit?</h1><br>"+
+"<h3>Following are the features of JUnit:<h3><br>"+
+"•	JUnit is an open-source framework.<br>"+
+"•	Supports automated testing of test suites.<br>"+
+"•	Provides annotations for identifying the test methods.<br>"+
+"•	Provides assertions to test expected results or exceptions of the methods under test.<br>"+
++"•	Provides a platform for running test cases automatically and checking their results and giving feedback."+
+"<h1>Why you need JUnit testing</h1><br>"+
+"•	It finds bugs early in the code, which makes our code more reliable.<br>"+
+"•	JUnit is useful for developers, who work in a test-driven environment.<br>"+
+"•	Unit testing forces a developer to read code more than writing.<br>"+
+"•	You develop more readable, reliable and bug-free code which builds confidence during development"
+);
+      
+   const collection= document.getElementsByClassName("h3s").style;
+   
+
+}
+function mongoDB(){
+   
+    document.write("<h>What is MongoDB?</h1><br>"+
+        "MongoDB is a document-oriented NoSQL database used for high volume data storage. MongoDB is a database which came into light around themid-2000s. It falls under the category of a NoSQL database.<br>");
+}
+function keywords(){
+    document.write("<h1>this keyword</h1><br>"+
+   "this keyword is used to refer to the current instance of the class. It can be used to access the variables and methods of the current object or to invoke constructors."+
+   "1)This can be used to refer current class instance variable.<br>"+
+"2)this can be used to invoke current class method.<br>"+
+"3) this()can be used invoke current class constructor.<br>"+
+"4)this can be passed as an argument in method call .<br>"+
+"5) this can be passed as san argument in constructor call.<br>"+
+"6) this can be used to return class instance from method .")
+}
+    </script>
+</body>
+</html>

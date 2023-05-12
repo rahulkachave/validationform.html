@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style  >
+     .y{
+        background-color: aqua;
+        align-items: end;
+        width: 500px;
+        height: 200 px;
+        text-align: center;
+     }   
+body{
+    text-align:center ;
+    /* background-color: red; */
+    align-content: center;
+    /* background-image: url("https://github.githubassets.com/images/modules/site/home/hero-glow.svg"); */
+}
+
+    </style>
+</head>
+
+<body <img src="https://github.githubassets.com/images/modules/site/home/hero-glow.svg" alt="Glowing universe" class="js-warp-hide position-absolute overflow-hidden home-hero-glow events-none">>
+    <div class="class">
+    <h1 id ='time' class="y"> Clock</h1>
+    <script >
+         let d;
+            let date;
+            let time;
+            // const options ={weekday : 'long',year :'numaric', month :'long' ,day :'numaric'};
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+        setInterval(() => {
+         d = new Date();
+        // date =d.toLocaleDateString(undefined ,options).toString;
+        date = d.toLocaleDateString(undefined, options);
+
+        date =d.toLocaleDateString();
+        time =d.getHours()+':'+ d.getMinutes()+':'+d.getSeconds();
+         document.getElementById('time').innerHTML = "current  time :"+date  + "  on " +  time;
+        
+    }, 1000);
+    </script>
+    </div>
+</body>
+</html>

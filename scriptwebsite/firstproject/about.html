@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="time">Date times live</h1>
+    
+    <script>  
+          let d;
+            let date;
+            let time;
+            // const options ={weekday : 'long',year :'numaric', month :'long' ,day :'numaric'};
+            
+        setInterval(() => {
+         d = new Date();
+        // date =d.toLocaleDateString(undefined ,options).toString;
+        date =d.toLocaleDateString();
+        time =d.getHours()+':'+ d.getMinutes()+':'+d.getSeconds();
+         document.getElementById('time').innerHTML = "current  time :"+date  + "  on " +  time;
+        
+    }, 1000);
+    
+          var age =10;
+        if(age>12){
+          //  console.log("you can play");
+      document.write('you can play');
+        }else{
+            //console.log("you can  not play")
+            document.write('you can not play');
+        }
+ 
+    </script>
+</body>
+</html>

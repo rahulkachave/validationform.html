@@ -1,0 +1,79 @@
+ /* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 'popins',;
+
+}  */
+body{
+  /* background-image: url("https://unsplash.com/photos/AkUR27wtaxs"); */
+/* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+
+    position: fixed;
+    top:0;
+    width:1000;
+    padding: 10px 400px;
+    background-color:red;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+  }
+  .indexbody{
+    /* background-image: url("Daco_5870283.png"); */
+    /* background-image: img src="Daco_5870283.png" alt="Description of image" ; */
+    background-color: black;
+    /* background-image: url("img_tree.gif"), url("paper.gif"); */
+   
+  }
+
+
+
+  .navigation a {
+    position: relative;
+    font-size: 1.1em;
+    text-decoration: #ffffff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+  }
+  .btnlogin-pop{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-left: 40px;
+
+  }
+  .wrapper{
+     position: relative; 
+    background:transparent;
+     border: 2px solid rgba(255,255, 255, .5);
+    border-radius: 200px; 
+   
+    box-shadow: 0.030px rgba(0,0, 0, .5);
+     /* display: flex;  */
+      /* justify-content: center;  */
+     align-items: center;  
+  }
+   .btn{
+    width: 70%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+   }
